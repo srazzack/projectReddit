@@ -12,7 +12,7 @@
 <p>
 Originally this was a straght forward test where the data, json object of subreddit /awww/ was to be rendered. There was no reason for implementing a back-end in node.js here. version 1 was to be a basic solution where an ajax request was made and upon form submit the hash should update the query and reflect the state of the app in the url. For this, the older html methods are deprecated and I used HTML5 pushstate.</p>
 
-<p>The CHALLENGE was that subreddit /r/awww/ , with three "w" did NOT exist. /a/aww/ , with two "w" did exist. Upon closer inspection, the json file for the reddit could be obtained simply by requesting ".json" after the hash. /r/awww/ originially did not seem to be sortable from the reddit api but later, I wrote the correct sort query to obtain specific query searched subreddit results. </p>
+<p>The CHALLENGE was that subreddit /r/awww/ , with three "w" did NOT exist. /a/aww/ , with two "w" did exist. More accurately, the reddit is not always accessable. Upon closer inspection, the json file for the reddit could be obtained simply by requesting ".json" after the hash. /r/awww/ originially did not seem to be sortable from the reddit api but later, I wrote the correct sort query to obtain specific query searched subreddit results. </p>
 
 <p>Why the node.js back-end:
        After initially not being able to use the reddit api correctly, I decided to build my own search engine for the reddit. 
@@ -25,11 +25,11 @@ Originally this was a straght forward test where the data, json object of subred
 </p>
 <p>Original Plan to handle the front-end UI: I proceeded to use backbone.js to handle a nice UI. Due to time constaints the backbone.js version (version 2) does not function properly yet, so the basic version, version 1 is represented through the index.html and main.js file. indexV2.html is the backbone.js version. The following is a list of functionality intended leveraging backbone.js.
 
-  <li>Version 1: Some improvements need to be made
-    a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
+  <li>allow for saving the subreddits into your own collection of favorites; through backbone.js models and collects. This would allow for our oun instances of the subreddits on the client and server-side through backbone.js cid.
   </li>
-  <li>Version 2: Some improvements need to be made
-    a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
+  <li>use of backbone.js routers to handle application state
+  </li>
+  <li>use of backbone.js routers to handle application state
   </li>
 
 </p>
