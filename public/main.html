@@ -70,9 +70,9 @@
     <script id="header" type="text/x-handlebars-template">
 
       {{#each children}} 
-        <div style="outline: 1px solid #aaa; width: 450px; height: 150px; float: left; margin: 5px;background-color: #ffd; font-size:small;">
-          <div style="float: right; test"> {{ data.title }} </div>
-          <img style="float: left;  "src="{{ data.thumbnail }}"></img>
+        <div style="outline: 1px solid #aaa; width: 500px; height: 175px; float: left; margin: 5px;background-color: #ffd; font-size:small;">
+          <div class="col-md-5"style="float: right;"> {{ data.title }} </div>
+          <img class="col-md-5"style="float: left;" src="{{ data.thumbnail }}"></img>
         </div>
       {{/each}}
       

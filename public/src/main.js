@@ -20,7 +20,7 @@ $(document).ready(function(){
             url: url,
             data: data
           })
-          .done(function(data){
+          .done(function success(data){
             for (var i = 0; i < data.data.children.length; i++) {
               console.log(data.data.children[i].data);
               console.log(data.data.children[i].data.author);
@@ -33,30 +33,22 @@ $(document).ready(function(){
             var subredditTemplate = $("#header").html();
             var theTemplate = Handlebars.compile (subredditTemplate);
             $("#cardSelection").append (theTemplate (cards));
-        });
+          });
       } else {
       // Fragment doesn't exist
-      $.ajax({
-            type: "GET",
-            crossdomain: true,
-            url: url,
-            data: data
-          })
-          .done(function(data){
+        var jqxhr = $.ajax('http://www.reddit.com/r/aww/search.json?q=' + query + ' &sort=relevance&restrict_sr=on&t=all')
+         .done(function success(data){
             for (var i = 0; i < data.data.children.length; i++) {
               console.log(data.data.children[i].data);
               console.log(data.data.children[i].data.author);
             };
-            
+      
             var cards = data.data;
-            //the state of the application must be represented by the url in the address bar
-            //new implementation in HTML5
             var subredditTemplate = $("#header").html();
             var theTemplate = Handlebars.compile (subredditTemplate);
             $("#cardSelection").append (theTemplate (cards));
         });
-      }  
-        
+      }
     }
   };
    $("#searchForm").on("submit", handlers.sendQuery(event));
