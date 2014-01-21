@@ -1,0 +1,85 @@
+.activeSlide {
+    outline: 0px solid #aaa;
+    width: 900px;
+    height: 675px;
+    min-height: 675px!important;
+    min-width: 900px!important;
+    background-color: #fff;
+    background-image: url("theme1bkgrndlg.jpg");
+    margin: 5px;
+    font-size: 200%;
+}
+
+.navbar {
+    background-color: #F0F0F0;
+}
+.slidesBar {
+    background-color: #f9fafc;
+}
+.slideContainer {
+    background-color: #8f949b;
+}
+
+.slide {
+    outline: 1px solid #aaa;
+    width: 200px;
+    height: 150px;
+    min-height: 100px!important;
+    background-color: #fff;
+    float: right;
+    margin: 5px;
+    background-image: url('theme1bkgrndsm.jpg');
+    font-size: 45%;
+}
+
+.targetSlideContBox {
+    outline: 0px solid #aaa;
+    width: 200px;
+    height: 22px;
+    min-height: 22px!important;
+    float: right;
+    margin: 5px;
+    font-size: 55%;
+}
+.slideText {
+    text-indent:5px;
+    word-wrap: break-word
+}
+
+.slideTitles{
+    font-size: 225%;
+}
+.slideHeaders{
+    font-size: 150%;
+}
+
+
+#slideContainer img {
+
+    margin: 10px;
+}
+
+#slideContainer ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+#slideContainer button {
+
+    margin: 10px;
+}
+
+#slidesBarTemp img {
+
+    margin: 10px;
+}
+
+#slidesBarTemp ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+#slidesBarTemp button {
+
+    margin: 10px;
+}
