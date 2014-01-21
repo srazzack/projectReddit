@@ -25,8 +25,18 @@ Originally this was a straght forward test where the data, json object of subred
 </p>
 <p>Original Plan to handle the front-end UI: I proceeded to use backbone.js to handle a nice UI. Due to time constainted the backbone.js version (version 2) does not function properly yet, so the basic version, version 1 is represented through the index.html and main.js file. 
 </p>
-<p>Version 1: Some improvements need to be done
-  a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
-</p>
+<ol>
+  <li>Version 1: Some improvements need to be done
+    a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
+  </li>
+    <li>Version 2: Some improvements need to be done
+    a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
+  </li>
+    <li>server.js file: not complete
+    a. I used the najax module to handle an async request for the raw json file. One on the server persisting asynchronously, I don't need to worry about having to depend on reddit.com. This would also drastically increase my application load time. In server.js, I accomodate the search query requests and with the appropriate response. 
+    Further, I intended to cache 1500 requests to speed up the application load time. One may ask, well, since the raw json file is being requested asynchronously, should not the cache be updated? Yes, it should. This is where I utilized fs.watchFile in my implementation. If an image file is modified from reddit, the server code will detect it and recache. 
+    This implementation does not currently work due to time constraints.
+  </li>
+</ol>
 </p>
 
