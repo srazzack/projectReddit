@@ -7,7 +7,7 @@
   <h3>Server-side component in node.js; to develop own search engine away from reddit api</h3>
 </h1>
 
-<h2>Documentation:</h2>
+<h2>The Development Thought Process:</h2>
 
 <p>
 Originally this was a straght forward test where the data, json object of subreddit /awww/ was to be rendered. There was no reason for implementing a back-end in node.js here. version 1 was to be a basic solution where an ajax request was made and upon form submit the hash should update the query and reflect the state of the app in the url. For this, the older html methods are deprecated and I used HTML5 pushstate.</p>
