@@ -7,7 +7,6 @@ $(document).ready(function(){
       var pattern = /q=(.*)/;
       console.log(path);
       var query = path.match(pattern)[1];
-
       var url = "http://www.reddit.com/r/aww/search.json?q=" + query + "&sort=relevance&restrict_sr=on&t=all";
       console.log(url);
       var data = {};
@@ -18,7 +17,11 @@ $(document).ready(function(){
           data: data
         })
         .done(function(data){
-          console.log(data.data.children[10].data.author);
+          for (var i = 0; i < data.data.children.length; i++) {
+            console.log(data.data.children[i].data);
+            console.log(data.data.children[i].data.author);
+          };
+          
           var cards = data.data;
           //the state of the application must be represented by the url in the address bar
           //new implementation in HTML5

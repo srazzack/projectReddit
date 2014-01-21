@@ -96,10 +96,10 @@
 
       {{#each children}} 
         <li> 
+          <div> {{ data.title }} </div>
+          <img src="{{ data.thumbnail }}"></img>
           <div> {{ data.author }} </div>
-          <div> {{ data.image }} </div>
-          <div> {{ data.comment }} </div>
-          <div> {{ data.source }} </div> 
+          <div> {{ data.url }} </div>
         </li>
       {{/each}}
       
