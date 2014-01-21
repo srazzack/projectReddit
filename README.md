@@ -25,13 +25,8 @@ Why the node.js back-end:
 
        I proceeded to use backbone.js to handle a nice UI. Due to time constainted the backbone.js version (version 2) does not function properly yet, so the basic version, version 1 is represented through the index.html and main.js file. 
 
-Example:
-
-    $("#presentationTitle").inline({
-        textSize: "250%",
-        defaultValue: "Enter title of presentation here",
-        callback: handlers.setTitle
-    });
+Version 1: Some improvements need to be done
+  a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
 
 </p>
 
