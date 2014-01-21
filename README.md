@@ -21,15 +21,23 @@ Originally this was a straght forward test where the data, json object of subred
 
        However, this seemed to be a longer project than I thought. I still had to work on the front-end. 
 
-       At this point I went back and refined the main.js file to use the reddit api to sort /r/awww/ (which does not seam to exist, but does).
+       At this point I went back and refined the main.js file to use the reddit api to sort /r/awww/ (which does not seem to exist, but does).
 </p>
-<p>Original Plan to handle the front-end UI: I proceeded to use backbone.js to handle a nice UI. Due to time constainted the backbone.js version (version 2) does not function properly yet, so the basic version, version 1 is represented through the index.html and main.js file. 
-</p>
-<ol>
-  <li>Version 1: Some improvements need to be done
+<p>Original Plan to handle the front-end UI: I proceeded to use backbone.js to handle a nice UI. Due to time constaints the backbone.js version (version 2) does not function properly yet, so the basic version, version 1 is represented through the index.html and main.js file. indexV2.html is the backbone.js version. The following is a list of functionality intended leveraging backbone.js.
+
+  <li>Version 1: Some improvements need to be made
     a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
   </li>
-    <li>Version 2: Some improvements need to be done
+  <li>Version 2: Some improvements need to be made
+    a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
+  </li>
+
+</p>
+<ol>
+  <li>Version 1: Some improvements need to be made
+    a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
+  </li>
+    <li>Version 2: Some improvements need to be made
     a. refactor code or setup better login to accomodate ajax in reference to application state; details in comments inside main.js file
   </li>
     <li>server.js file: not complete

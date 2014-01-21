@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>subreddit search portal: awww </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" type="text/css" media="screen" title="master" charset="utf-8">
+    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" title="master" charset="utf-8">
+    <script src='lib/jquery1.9.1.js'></script>
+    <script src='lib/handlebars-v1.3.0.js'></script>
+    <script type="text/javascript" src="src/main.js"></script>
+
+    <link href="style/main.css" rel="stylesheet">
+
+    <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="lib/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="lib/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lib/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="lib/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="lib/bootstrap/assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+        </ul>
+        <h3 class="text-muted">subreddit search</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>/r/awww Subreddit Search</h1>
+        <form class="form-horizontal" id="searchForm">
+          <dl>
+              <dt><label for="search">search /r/awww/</label></dt>
+              <dd><input id="subredditQuery" type="text" name="q"/></dd>
+              <p><button id="sendQuery" type="submit" class="btn btn-lg btn-success">Search</button></p>
+          </dl>
+        </form>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <div id="cardSelection"></div>
+        <div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+
+    <script id="header" type="text/x-handlebars-template">
+
+      {{#each children}} 
+        <div style="outline: 1px solid #aaa; width: 500px; height: 175px; float: left; margin: 5px;background-color: #ffd; font-size:small;">
+          <div class="col-md-5"style="float: right;"> {{ data.title }} </div>
+          <img class="col-md-5"style="float: left;" src="{{ data.thumbnail }}"></img>
+        </div>
+      {{/each}}
+      
+    </script>
+
+    <script src="lib/bootstrap/assets/js/jquery.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-alert.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="lib/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
